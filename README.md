@@ -1,23 +1,23 @@
 # Design and Verification of a Watchdog Timer Extension for RV32I Processor
 
-## 📘 Course Information
+## Course
 **Course:** EE-321 – Computer Architecture and Organization  
 
 
-## 👨‍💻 Team Members
+## Team Members
 - Ibraheem Hasnain (412444)  
 - Aneeq ur Rehman (418794)  
 - Agha Mushaf Raza (423074)
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 This project focuses on enhancing the **reliability and fault tolerance** of an **RV32I RISC-V processor** by designing and integrating a **hardware watchdog timer**.  
 The watchdog detects software hangs and recovers the system automatically using **interrupts and resets**.
 
 ---
 
-## 🎯 Motivation
+## Motivation
 Modern processors used in embedded and safety-critical systems must handle:
 - Software hangs
 - Infinite loops
@@ -27,7 +27,7 @@ A hardware watchdog timer provides an **automatic recovery mechanism** without h
 
 ---
 
-## ✅ Project Objectives
+## Project Objectives
 - Design an **independent watchdog timer hardware module**
 - Integrate watchdog safely into the **RV32I 5-stage pipeline**
 - Provide **early fault detection** via watchdog interrupt
@@ -36,7 +36,7 @@ A hardware watchdog timer provides an **automatic recovery mechanism** without h
 
 ---
 
-## 🏗 RV32I Architecture Overview
+## RV32I Architecture Overview
 - **ISA:** RV32I (RISC-V)
 - **Pipeline Stages:**
   - IF – Instruction Fetch
@@ -48,7 +48,7 @@ A hardware watchdog timer provides an **automatic recovery mechanism** without h
 
 ---
 
-## ⏱ Watchdog Timer Design
+## Watchdog Timer Design
 - Independent hardware module
 - Internal counter increments every clock cycle
 - **Feed signal** resets counter during normal execution
@@ -57,7 +57,7 @@ A hardware watchdog timer provides an **automatic recovery mechanism** without h
 
 ---
 
-## 🔌 Pipeline Integration
+## Pipeline Integration
 - No interference with normal instruction flow
 - Reset safely clears pipeline registers
 - Watchdog reset integrated with:
@@ -67,7 +67,7 @@ A hardware watchdog timer provides an **automatic recovery mechanism** without h
 
 ---
 
-## 🧪 Testbench & Verification
+## Testbench & Verification
 - Custom RTL testbench for:
   - RV32I pipeline
   - Watchdog module
@@ -79,14 +79,14 @@ A hardware watchdog timer provides an **automatic recovery mechanism** without h
 
 ---
 
-## 📊 Simulation Results
+## Simulation Results
 - **WDT = 1:** Normal execution with periodic feed
 - **WDT = 0:** Software hang detected → interrupt → reset
 - Confirms correct watchdog behavior and pipeline safety
 
 ---
 
-## 🏁 Key Takeaways
+## Key Takeaways
 ✔ Successful integration of watchdog with RV32I  
 ✔ Early fault detection via interrupt  
 ✔ Safe processor recovery using reset  
@@ -102,10 +102,4 @@ A hardware watchdog timer provides an **automatic recovery mechanism** without h
 
 ---
 
-## 📂 Repository Structure (Example)
-```text
-├── rtl/            # RV32I core and watchdog RTL
-├── testbench/      # Verification testbenches
-├── simulations/    # Simulation results
-├── docs/           # Project slides & diagrams
-└── README.md
+
